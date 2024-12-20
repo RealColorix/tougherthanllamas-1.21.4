@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ttll",
+	"version": "Alpha-1.0",
+	"name": "TougherThanLlamas",
+	"description": "Harder than vanilla mod without being a nightmare to play.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ttll/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.colorixer.ttll.TougherThanLlamas"
+		],
+		"client": [
+			"net.colorixer.ttll.TougherThanLlamasClient"
+		],
+		"fabric-datagen": [
+			"net.colorixer.ttll.TougherThanLlamasDataGenerator"
+		]
+	},
+	"mixins": [
+		"ttll.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
